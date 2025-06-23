@@ -43,6 +43,12 @@ export default function TicketForm({ dispatch, editingTicket }) {
         clearFrom();
     }
 
+    const handleCancelEdit = () => {
+        dispatch({ type: "CLEAR_EDITING_TICKET" });
+        clearFrom();
+
+    };
+
 
     return (
 
@@ -71,6 +77,10 @@ export default function TicketForm({ dispatch, editingTicket }) {
             </fieldset>
 
             <button type="submit" className="button"> Submit </button>
+
+            {editingTicket && (
+                <button className="button" onClick={handleCancelEdit}>Cancel Edit</button>
+            )}
 
         </form>
     )
