@@ -4,6 +4,7 @@ import './styles.css'
 import { useReducer } from 'react';
 import TicketForm from './components/TicketForm';
 import ticketReducer from './reducers/ticketReducer';
+import TicketList from './components/TicketList';
 
 
 function App() {
@@ -16,6 +17,14 @@ function App() {
       <div className='container'>
         <h1>Bug Blaster</h1>
         <TicketForm dispatch={dispatch} />
+
+        {state.tickets.length > 0 && (
+          <div>
+            <h2> All Tickets</h2>
+            <TicketList tickets={state.tickets} dispatch={dispatch} />
+          </div>
+        )}
+
       </div>
     </div>
   );
