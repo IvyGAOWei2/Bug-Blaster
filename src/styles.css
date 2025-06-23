@@ -5,10 +5,13 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    background-color: #f4f4f4;
+    background-image: url("https://www.transparenttextures.com/patterns/church.png");
 }
 
 h1 {
-    margin: 50px;;
+    margin: 50px;
+    ;
 }
 
 
@@ -31,7 +34,7 @@ label {
 .ticket-list {
     margin-bottom: 200px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 }
 
 .ticket-item {
