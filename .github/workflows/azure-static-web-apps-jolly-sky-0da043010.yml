@@ -20,7 +20,7 @@ jobs:
         run: npm install
 
       - name: Build the React app
-        run: npm run build
+        run: CI='' npm run build
 
       - name: Upload to Azure
         uses: Azure/static-web-apps-deploy@v1
